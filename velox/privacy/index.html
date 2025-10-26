@@ -1,70 +1,75 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Privacy Policy – Velox</title>
-  <meta name="color-scheme" content="dark light">
-  <meta name="theme-color" content="#0b0b0d">
-  <style>
-    /* Dark-first, auto-light if the system prefers light */
-    :root{
-      --bg:#0b0b0d; --fg:#e7e7ea; --muted:#9aa0a6; --link:#7aa2ff; --border:#24262b;
-    }
-    @media (prefers-color-scheme: light){
-      :root{
-        --bg:#ffffff; --fg:#111; --muted:#666; --link:#2459f6; --border:#eee;
-      }
-    }
-    html{color-scheme:dark light}
-    body{margin:auto;max-width:720px;padding:24px;background:var(--bg);color:var(--fg);
-         font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,Helvetica,sans-serif}
-    h1{margin:0 0 8px}
-    h2{margin:24px 0 8px;font-size:1.1rem}
-    small,footer{color:var(--muted)}
-    a{color:var(--link);text-decoration:none}
-    a:hover{text-decoration:underline}
-    ul{margin:0 0 16px 20px}
-    hr{border:0;border-top:1px solid var(--border);margin:24px 0}
-    code,kbd{background:rgba(127,127,127,.15);padding:.1em .3em;border-radius:4px}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy – Velox</title>
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0b0b0d">
+<style>
+:root{--bg:#0b0b0d;--fg:#e7e7ea;--muted:#9aa0a6;--link:#7aa2ff;--border:#24262b}
+@media (prefers-color-scheme: light){:root{--bg:#fff;--fg:#111;--muted:#666;--link:#2459f6;--border:#eee}}
+html{color-scheme:dark light}
+body{margin:auto;max-width:720px;padding:24px;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,Helvetica,sans-serif}
+h1{margin:0 0 8px} h2{margin:24px 0 8px;font-size:1.1rem}
+small,footer{color:var(--muted)} a{color:var(--link);text-decoration:none} a:hover{text-decoration:underline}
+ul{margin:0 0 16px 20px} hr{border:0;border-top:1px solid var(--border);margin:24px 0}
+code,kbd{background:rgba(127,127,127,.15);padding:.1em .3em;border-radius:4px}
+</style>
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <small>Last updated: 2025-09-27</small>
+  <small>Last updated: 2025-10-26</small>
 
-  <p>Velox (“we”, “us”, “our”) lets you upscale short videos using cloud processing. This policy explains what data we collect and how we use it.</p>
+  <p>Velox (“we”, “us”) upscales short videos using cloud processing. This policy explains what we collect, why, and your options.</p>
 
-  <h2>Information we collect</h2>
+  <h2>Data we collect</h2>
   <ul>
-    <li><strong>Account data</strong> (email) if you sign in via Firebase Authentication.</li>
-    <li><strong>Purchase data</strong> from RevenueCat to verify subscriptions (we don’t receive full card details).</li>
-    <li><strong>Diagnostics</strong> such as crash and error logs (if enabled) to improve stability.</li>
-    <li><strong>Job metadata</strong> for uploaded videos (e.g., filename, size, processing status) to deliver results and show history.</li>
+    <li><strong>Account</strong>: email and Firebase user ID when you sign in.</li>
+    <li><strong>Purchases</strong>: subscription status from RevenueCat (no full payment card data).</li>
+    <li><strong>Jobs</strong>: metadata for your uploads and results (e.g., filenames, sizes, status, timestamps).</li>
+    <li><strong>Content</strong>: uploaded videos and generated outputs stored to deliver results.</li>
+    <li><strong>Diagnostics</strong>: crash/error logs (if enabled) to fix issues.</li>
   </ul>
 
-  <h2>How we use information</h2>
+  <h2>How we use data</h2>
   <ul>
-    <li>Provide and operate the app (authenticate, process jobs, save results).</li>
-    <li>Validate purchases and restore access across devices.</li>
-    <li>Maintain and improve performance, reliability, and support.</li>
+    <li>Authenticate, process, and deliver video jobs; show history.</li>
+    <li>Validate subscriptions and restore access across devices.</li>
+    <li>Maintain security, performance, support, and prevent abuse.</li>
   </ul>
 
   <h2>Sharing</h2>
-  <p>We use service providers acting on our behalf: Google Firebase (auth, database, storage), RevenueCat (in-app purchases), and our cloud processing provider. Their use of data is governed by their policies and our instructions.</p>
+  <p>We use processors acting on our behalf, including Google Firebase (auth, database, storage), RevenueCat (subscriptions), and our video processing infrastructure. They process data under our instructions and their privacy terms.</p>
 
   <h2>Retention</h2>
-  <p>We retain account, purchase, and job data as needed to provide the service and meet legal requirements. You may request deletion as described below.</p>
+  <p>We retain account, purchase, and job data while you use the app and as needed for legal, security, and accounting purposes. See “Delete your data”.</p>
 
   <h2>Your rights</h2>
-  <p>You may request access, correction, or deletion of your data. If your region grants specific privacy rights, you may exercise them by contacting us. For step-by-step instructions on requesting account and data deletion, visit our <a href="../delete-account/">Account &amp; Data Deletion</a> page.</p>
+  <p>You can request access, correction, portability, objection, or deletion where applicable to your region’s laws (e.g., GDPR/CCPA). We will verify your request via your account email.</p>
+
+  <h2>Delete your data</h2>
+  <ul>
+    <li><strong>In the app</strong>: <em>Settings → Danger zone → Delete account</em>. This deletes your jobs, profile document, storage artifacts, and Firebase Auth record.</li>
+    <li><strong>By email</strong>: write to <a href="mailto:support@opallabsdev.com">support@opallabsdev.com</a> from your account email with subject “Velox account deletion”.</li>
+  </ul>
+  <p>We aim to complete deletion within 7 days (no later than 30). Minimal logs/payment records may be retained for up to 90 days where required.</p>
+
+  <h2>Subscriptions</h2>
+  <p>Deleting your account does not cancel an active App Store or Google Play subscription. Cancel in your store settings.</p>
+
+  <h2>Children</h2>
+  <p>The service is not directed to children under 13 (or the minimum age required in your region).</p>
+
+  <h2>Changes</h2>
+  <p>We may update this policy. Material changes will be noted by updating the date above.</p>
 
   <h2>Contact</h2>
   <p>Email: <a href="mailto:support@opallabsdev.com">support@opallabsdev.com</a></p>
 
   <hr>
   <footer>
-    See also our <a href="../terms/">Terms of Service</a> and <a href="../delete-account/">Account &amp; Data Deletion</a>.
+    See also our <a href="../terms/">Terms of Service</a><!-- and optionally --><span> · </span><a href="../delete-account/">Account &amp; Data Deletion</a>
   </footer>
 </body>
 </html>
