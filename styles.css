@@ -1,0 +1,37 @@
+/* === Robust centering for cards (works across browsers) === */
+.cards-wrap{
+  /* legacy fallback centering */
+  text-align:center;
+  margin:38px 0;
+}
+.cards-wrap::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.card{
+  display:inline-block;      /* center as inline-blocks */
+  text-align:left;           /* keep content left-aligned inside */
+  vertical-align:top;
+  width:clamp(320px, 44vw, 520px);
+  max-width:100%;
+  margin:9px;                /* gap simulation */
+}
+
+/* Modern engines: prefer CSS Grid when available */
+@supports (display: grid){
+  .cards-wrap{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 520px));
+    place-content:center;          /* centers the track area */
+    justify-items:stretch;
+    gap:18px;
+    text-align:initial;            /* hand off to grid */
+    margin:38px 0;
+  }
+  .card{
+    display:block;
+    width:auto;
+    margin:0;
+  }
+}
