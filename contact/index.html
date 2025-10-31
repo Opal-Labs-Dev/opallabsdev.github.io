@@ -1,0 +1,67 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Opal Labs Oy</title>
+  <meta name="description" content="Contact Opal Labs Oy — support@opallabs.com." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <meta name="theme-color" content="#0b0f1a" />
+</head>
+<body>
+<header class="container">
+  <div class="brand">
+    <a href="/"><img src="/Opal Labs Logo.png" alt="Opal Labs logo" /></a>
+    <a href="/" class="name">Opal Labs Oy</a>
+  </div>
+  <nav>
+    <a class="" href="/about/">About</a>
+    <a class="" href="/products/">Products</a>
+    <a class="active" href="/contact/">Contact</a>
+  </nav>
+</header>
+
+<section class="container hero">
+  <span class="tag">Contact</span>
+  <h1>Say hello</h1>
+  <p class="lead">For support, partnerships, or early access to Velox, email us and we’ll get back to you promptly.</p>
+  <div class="cta">
+    <a class="btn" href="mailto:support@opallabs.com">support@opallabs.com</a>
+    <a class="btn ghost" href="/products/">Products</a>
+  </div>
+</section>
+
+<section class="container grid">
+  <article class="card contact-card">
+    <h2>General</h2>
+    <a class="link" href="mailto:support@opallabs.com">support@opallabs.com</a>
+    <p class="small">We aim to respond within 1–2 business days.</p>
+  </article>
+  <aside class="card">
+    <h2>Legal</h2>
+    <p class="sub">Policies for our apps.</p>
+    <div class="inline-links">
+      <a href="/velox/privacy">Velox Privacy Policy</a>
+      <a href="/velox/terms">Velox Terms of Service</a>
+    </div>
+  </aside>
+</section>
+
+<footer class="container">
+  <div class="divider"></div>
+  <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center">
+    <div>© <span id="y"></span> Opal Labs Oy</div>
+    <div class="inline-links">
+      <a href="/about/">About</a>
+      <a href="/products/">Products</a>
+      <a href="/contact/">Contact</a>
+      <a href="/velox/privacy">Velox Privacy</a>
+      <a href="/velox/terms">Velox Terms</a>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body></html>

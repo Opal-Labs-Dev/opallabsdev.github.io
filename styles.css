@@ -1,0 +1,99 @@
+
+:root{
+  --bg:#0b0f1a;
+  --bg2:#0f1422;
+  --text:#e6e9ef;
+  --muted:#a6adbb;
+  --pink:#ff4fd8;
+  --orange:#ff9b5e;
+  --blue:#5a6bff;
+  --card:#12192a;
+  --border:rgba(255,255,255,.08);
+  --shadow: 0 10px 30px rgba(0,0,0,.4);
+  --radius:18px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--text);
+  background: var(--bg); /* solid base */
+  min-height:100%;
+  position:relative;
+}
+/* Fixed, full-viewport glow layer to avoid any seams/cuts */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  background:
+    radial-gradient(1200px 700px at 15% 10%, rgba(255,79,216,.20), transparent 60%),
+    radial-gradient(1000px 700px at 85% 20%, rgba(90,107,255,.18), transparent 60%),
+    radial-gradient(900px 600px at 50% 100%, rgba(255,155,94,.14), transparent 60%),
+    linear-gradient(180deg, var(--bg), var(--bg2));
+  /* No repeating; fixed to viewport */
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+a{color:inherit;text-decoration:none}
+.container{max-width:1120px;margin:0 auto;padding:24px}
+header{
+  display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0;
+}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:36px;height:36px;border-radius:10px;filter: drop-shadow(0 8px 20px rgba(255,79,216,.25)) drop-shadow(0 16px 40px rgba(90,107,255,.18));}
+.brand .name{font-weight:700;letter-spacing:.2px}
+nav a{opacity:.9;margin-left:16px}
+nav a:hover, nav a.active{opacity:1;text-decoration:underline;text-decoration-color:rgba(255,255,255,.35)}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  background: linear-gradient(135deg, var(--pink), var(--blue));
+  border:1px solid rgba(255,255,255,.1);
+  padding:12px 18px;border-radius:14px;
+  box-shadow: var(--shadow);
+  font-weight:600;
+}
+.btn.ghost{
+  background:transparent;border-color:var(--border);
+  box-shadow:none;
+}
+.hero{padding:64px 0 48px; text-align:center}
+.tag{
+  display:inline-flex;gap:8px;align-items:center;
+  padding:6px 10px;border-radius:999px;
+  background:rgba(255,255,255,.06);border:1px solid var(--border);
+  color:var(--muted);font-size:13px;
+}
+h1{font-size:42px;line-height:1.08;margin:18px 0 12px}
+.lead{color:var(--muted);max-width:760px;margin:0 auto 22px;font-size:18px}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+.grid{display:grid;grid-template-columns:1fr;gap:18px;margin:38px 0}
+@media(min-width:820px){ .grid{grid-template-columns: 1.2fr .8fr} }
+.card{
+  background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:20px;
+  box-shadow: var(--shadow);
+}
+.card h2{margin:4px 0 8px;font-size:22px}
+.sub{color:var(--muted);font-size:14px;margin:0 0 14px}
+.pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--border);font-size:12px;margin-right:8px}
+.list{margin:12px 0 0;padding-left:18px}
+.list li{margin:6px 0;color:var(--muted)}
+.link{display:inline-flex;align-items:center;gap:8px;margin-top:14px}
+.divider{height:1px;background:var(--border);margin:28px 0}
+footer{padding:26px 0;color:var(--muted);font-size:14px}
+.inline-links a{margin-right:14px;text-decoration:underline;text-decoration-color:rgba(255,255,255,.25)}
+.inline-links a:hover{text-decoration-color:rgba(255,255,255,.6)}
+.product-badge{display:inline-flex;align-items:center;gap:8px;margin:4px 0 12px;
+  font-weight:600;background: linear-gradient(135deg, rgba(255,79,216,.16), rgba(90,107,255,.16));
+  padding:8px 12px;border-radius:999px;border:1px solid var(--border);
+}
+.coming{font-size:12px;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid var(--border);margin-left:6px}
+.small{font-size:13px;color:var(--muted)}
+.contact-card{display:flex;flex-direction:column;gap:12px}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:12px;color:var(--muted)}
