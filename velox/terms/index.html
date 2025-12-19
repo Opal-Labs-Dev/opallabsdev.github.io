@@ -1,51 +1,78 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Terms of Service – Velox</title>
-  <meta name="color-scheme" content="dark light">
-  <meta name="theme-color" content="#0b0b0d">
-  <style>
-    /* Dark-first, auto-light if the system prefers light */
-    :root{
-      --bg:#0b0b0d; --fg:#e7e7ea; --muted:#9aa0a6; --link:#7aa2ff; --border:#24262b;
-    }
-    @media (prefers-color-scheme: light){
-      :root{
-        --bg:#ffffff; --fg:#111; --muted:#666; --link:#2459f6; --border:#eee;
-      }
-    }
-    html{color-scheme:dark light}
-    body{margin:auto;max-width:720px;padding:24px;background:var(--bg);color:var(--fg);
-         font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,Helvetica,sans-serif}
-    h1{margin:0 0 8px}
-    small,footer{color:var(--muted)}
-    a{color:var(--link);text-decoration:none}
-    a:hover{text-decoration:underline}
-    ol{margin:0 0 16px 20px}
-    hr{border:0;border-top:1px solid var(--border);margin:24px 0}
-  </style>
+  <meta name="description" content="Terms of Service for Velox app." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <meta name="theme-color" content="#0b0f1a" />
 </head>
+
 <body>
-  <h1>Terms of Service</h1>
-  <small>Last updated: 2025-09-27</small>
+  <header class="container">
+    <div class="brand">
+      <a href="/"><img src="/Opal Labs Logo.png" alt="Opal Labs logo" /></a>
+      <a href="/" class="name">Opal Labs Oy</a>
+    </div>
+    <nav>
+      <a class="" href="/about/">About</a>
+      <a class="" href="/products/">Products</a>
+      <a class="" href="/contact/">Contact</a>
+    </nav>
+  </header>
 
-  <ol>
-    <li><strong>Service.</strong> Velox lets you upscale short videos using cloud processing.</li>
-    <li><strong>Eligibility.</strong> You must be legally able to enter into these terms.</li>
-    <li><strong>Subscriptions &amp; Billing.</strong> Purchases are processed by the App Store/Google Play. Manage or cancel in your store account. Taxes/fees may apply.</li>
-    <li><strong>Your Content.</strong> You must own or have rights to the videos you upload and comply with applicable laws. You grant us a limited license to process your videos solely to provide the service and deliver results.</li>
-    <li><strong>Acceptable Use.</strong> No illegal, infringing, or harmful content or activity.</li>
-    <li><strong>Availability.</strong> We may modify or discontinue features with notice where feasible.</li>
-    <li><strong>Disclaimers.</strong> The service is provided “as is” without warranties.</li>
-    <li><strong>Limitation of Liability.</strong> To the extent permitted by law, we are not liable for indirect, incidental, or consequential damages.</li>
-    <li><strong>Termination.</strong> We may suspend or terminate access for violations or misuse.</li>
-    <li><strong>Privacy.</strong> See our <a href="../privacy/">Privacy Policy</a>.</li>
-    <li><strong>Contact.</strong> <a href="mailto:support@opallabsdev.com">support@opallabsdev.com</a></li>
-  </ol>
+  <section class="container" style="max-width:800px; margin-top:24px;">
+    <h1>Terms of Service</h1>
+    <p class="small">Last updated: 2025-09-27</p>
 
-  <hr>
-  <footer>© 2025 Velox</footer>
+    <ol class="list" style="padding-left:20px; color:var(--muted); line-height:1.6;">
+      <li style="margin-bottom:12px;"><strong>Service.</strong> Velox lets you upscale short videos using cloud
+        processing.</li>
+      <li style="margin-bottom:12px;"><strong>Eligibility.</strong> You must be legally able to enter into these terms.
+      </li>
+      <li style="margin-bottom:12px;"><strong>Subscriptions &amp; Billing.</strong> Purchases are processed by the App
+        Store/Google Play. Manage or cancel in your store account. Taxes/fees may apply.</li>
+      <li style="margin-bottom:12px;"><strong>Your Content.</strong> You must own or have rights to the videos you
+        upload and comply with applicable laws. You grant us a limited license to process your videos solely to provide
+        the service and deliver results.</li>
+      <li style="margin-bottom:12px;"><strong>Acceptable Use.</strong> No illegal, infringing, or harmful content or
+        activity.</li>
+      <li style="margin-bottom:12px;"><strong>Availability.</strong> We may modify or discontinue features with notice
+        where feasible.</li>
+      <li style="margin-bottom:12px;"><strong>Disclaimers.</strong> The service is provided “as is” without warranties.
+      </li>
+      <li style="margin-bottom:12px;"><strong>Limitation of Liability.</strong> To the extent permitted by law, we are
+        not liable for indirect, incidental, or consequential damages.</li>
+      <li style="margin-bottom:12px;"><strong>Termination.</strong> We may suspend or terminate access for violations or
+        misuse.</li>
+      <li style="margin-bottom:12px;"><strong>Privacy.</strong> See our <a href="../privacy/"
+          style="color:var(--blue)">Privacy Policy</a>.</li>
+      <li><strong>Contact.</strong> <a href="mailto:support@opallabsdev.com"
+          style="color:var(--blue)">support@opallabsdev.com</a></li>
+    </ol>
+
+    <div class="divider"></div>
+    <p class="small">© 2025 Velox</p>
+  </section>
+
+  <footer class="container">
+    <div class="divider"></div>
+    <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center">
+      <div>© <span id="y"></span> Opal Labs Oy</div>
+      <div class="inline-links">
+        <a href="/about/">About</a>
+        <a href="/products/">Products</a>
+        <a href="/contact/">Contact</a>
+        <a href="/velox/privacy">Velox Privacy</a>
+        <a href="/velox/terms">Velox Terms</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
+
 </html>
