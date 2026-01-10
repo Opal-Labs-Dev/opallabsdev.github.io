@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy – FaceIQ</title>
+    <meta name="description" content="Privacy Policy for FaceIQ app." />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <meta name="theme-color" content="#0b0f1a" />
+</head>
+
+<body>
+    <header class="container">
+        <div class="brand">
+            <a href="/"><img src="/Opal Labs Logo.png" alt="Opal Labs logo" /></a>
+            <a href="/" class="name">Opal Labs Oy</a>
+        </div>
+        <nav>
+            <a class="" href="/about/">About</a>
+            <a class="" href="/products/">Products</a>
+            <a class="" href="/contact/">Contact</a>
+        </nav>
+    </header>
+
+    <section class="container" style="max-width:800px; margin-top:24px;">
+        <h1>Privacy Policy</h1>
+        <p class="small">Last updated: 2026-01-10</p>
+
+        <p><strong>FaceIQ</strong> (“we”, “us”) analyzes facial features to provide personalized improvement tips. This
+            policy explains what we collect, why, and your options. We take your privacy seriously, especially regarding
+            biometric and facial data.</p>
+
+        <h2>1. Introduction & Data Collection</h2>
+        <p>We collect the following types of data to provide our service:</p>
+        <ul class="list">
+            <li><strong>Personal Information</strong>: Email address (if creating an account).</li>
+            <li><strong>Facial Data</strong>: Photos of your face uploaded for analysis.</li>
+            <li><strong>Usage Data</strong>: App interactions, crash logs, and performance data.</li>
+            <li><strong>Payment Data</strong>: Processed securely by Apple (StoreKit) and RevenueCat. We do not store
+                credit card numbers.</li>
+        </ul>
+
+        <h2>2. Facial Data Policy</h2>
+        <p>Because we process images of your face, we adhere to strict privacy standards:</p>
+        <ul class="list">
+            <li><strong>What is collected?</strong>: Images of the user's face.</li>
+            <li><strong>How is it used?</strong>: To analyze facial features using AI and provide personalized
+                improvement tips.</li>
+            <li><strong>Is it shared?</strong>: Yes, images are securely transmitted to our cloud providers (Firebase,
+                xAI) solely for the purpose of analysis.</li>
+            <li><strong>How long is it retained?</strong>: Images are deleted immediately after analysis and are not
+                used to train global AI models.</li>
+            <li><strong>Disclosure</strong>: We do not sell, trade, or otherwise transfer your facial data to outside
+                parties.</li>
+        </ul>
+
+        <h2>3. Third-Party Services</h2>
+        <p>We leverage the following third-party providers to power our app:</p>
+        <ul class="list">
+            <li><strong>Google Firebase</strong>: For authentication, database, and secure cloud storage.</li>
+            <li><strong>RevenueCat</strong>: For managing subscriptions and purchase history.</li>
+            <li><strong>Google ML Kit</strong>: For on-device face detection.</li>
+            <li><strong>xAI (Grok)</strong>: For generating the AI analysis and text explanation.</li>
+        </ul>
+
+        <h2>4. User Rights (GDPR/CCPA Compliance)</h2>
+        <ul class="list">
+            <li><strong>Right to Delete</strong>: Users can delete their account and all associated data directly within
+                the app Settings.</li>
+            <li><strong>Right to Access</strong>: Users can request a copy of their data by contacting support.</li>
+        </ul>
+
+        <h2>5. Contact Information</h2>
+        <p>If you have questions about this policy or your data, please contact us:</p>
+        <p>Email: <a href="mailto:support@opallabsdev.com" style="color:var(--blue)">support@opallabsdev.com</a></p>
+        <p>Website: <a href="https://opallabsdev.com" style="color:var(--blue)">https://opallabsdev.com</a></p>
+
+        <div class="divider"></div>
+        <p class="small">See also our <a href="../terms/" style="text-decoration:underline;">Terms of Service</a></p>
+    </section>
+
+    <footer class="container">
+        <div class="divider"></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center">
+            <div>© <span id="y"></span> Opal Labs Oy</div>
+            <div class="inline-links">
+                <a href="/about/">About</a>
+                <a href="/products/">Products</a>
+                <a href="/contact/">Contact</a>
+                <a href="/faceiq/privacy">FaceIQ Privacy</a>
+                <a href="/faceiq/terms">FaceIQ Terms</a>
+            </div>
+        </div>
+    </footer>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
