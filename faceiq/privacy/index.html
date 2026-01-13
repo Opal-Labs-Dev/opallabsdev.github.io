@@ -51,8 +51,16 @@
                 improvement tips.</li>
             <li><strong>Is it shared?</strong>: Yes, images are securely transmitted to our cloud providers (Firebase,
                 xAI) solely for the purpose of analysis.</li>
-            <li><strong>How long is it retained?</strong>: Images are deleted immediately after analysis and are not
-                used to train global AI models.</li>
+            <li><strong>Retention</strong>:
+                <ul style="margin-top:8px; margin-bottom:8px;">
+                    <li><strong>Opal Labs retention</strong>: We do not retain face images. Images are deleted from our
+                        Firebase Storage immediately after analysis is completed and results are returned.</li>
+                    <li><strong>Third-party processor retention (xAI/Grok)</strong>: Images transmitted to xAI are
+                        processed to generate analysis results. xAI may retain submitted content for up to 30 days and
+                        may retain it longer if legally required or if flagged for security/safety/compliance review,
+                        consistent with xAI’s enterprise/API terms.</li>
+                </ul>
+            </li>
             <li><strong>Disclosure</strong>: We do not sell, trade, or otherwise transfer your facial data to outside
                 parties.</li>
         </ul>
@@ -63,7 +71,9 @@
             <li><strong>Google Firebase</strong>: For authentication, database, and secure cloud storage.</li>
             <li><strong>RevenueCat</strong>: For managing subscriptions and purchase history.</li>
             <li><strong>Google ML Kit</strong>: For on-device face detection.</li>
-            <li><strong>xAI (Grok)</strong>: For generating the AI analysis and text explanation.</li>
+            <li><strong>xAI (Grok)</strong>: For generating the AI analysis and text explanation (facial analysis
+                feedback).
+                xAI may retain data for up to 30 days per their terms.</li>
         </ul>
 
         <h2>4. User Rights (GDPR/CCPA Compliance)</h2>
