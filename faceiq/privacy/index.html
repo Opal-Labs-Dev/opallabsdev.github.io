@@ -27,7 +27,7 @@
 
     <section class="container" style="max-width:800px; margin-top:24px;">
         <h1>Privacy Policy</h1>
-        <p class="small">Last updated: 2026-01-10</p>
+        <p class="small">Last updated: 2026-01-13</p>
 
         <p><strong>FaceIQ</strong> (“we”, “us”) analyzes facial features to provide personalized improvement tips. This
             policy explains what we collect, why, and your options. We take your privacy seriously, especially regarding
@@ -37,7 +37,11 @@
         <p>We collect the following types of data to provide our service:</p>
         <ul class="list">
             <li><strong>Personal Information</strong>: Email address (if creating an account).</li>
-            <li><strong>Facial Data</strong>: Photos of your face uploaded for analysis.</li>
+            <li><strong>Facial Data</strong>: A still photo (JPEG) of your face that you capture with the camera or
+                choose
+                from your photo library and explicitly upload for analysis. We do not collect Face ID data, depth data,
+                or
+                any biometric templates.</li>
             <li><strong>Usage Data</strong>: App interactions, crash logs, and performance data.</li>
             <li><strong>Payment Data</strong>: Processed securely by Apple (StoreKit) and RevenueCat. We do not store
                 credit card numbers.</li>
@@ -46,21 +50,35 @@
         <h2>2. Facial Data Policy</h2>
         <p>Because we process images of your face, we adhere to strict privacy standards:</p>
         <ul class="list">
-            <li><strong>What is collected?</strong>: Images of the user's face.</li>
+            <li><strong>What is collected?</strong>: A still face photo (JPEG) uploaded by the user from the camera or
+                photo library.</li>
             <li><strong>How is it used?</strong>: To analyze facial features using AI and provide personalized
                 improvement tips.</li>
             <li><strong>Is it shared?</strong>: Yes, images are securely transmitted to our cloud providers (Firebase,
                 xAI) solely for the purpose of analysis.</li>
+            <li><strong>Storage (Opal Labs/Firebase)</strong>: The image is uploaded directly to a private Firebase
+                Storage path <code>uploads/{uid}/{timestamp}.jpg</code> in our Firebase project (region: us-central1)
+                for processing.
+            </li>
             <li><strong>Retention</strong>:
                 <ul style="margin-top:8px; margin-bottom:8px;">
-                    <li><strong>Opal Labs retention</strong>: We do not retain face images. Images are deleted from our
-                        Firebase Storage immediately after analysis is completed and results are returned.</li>
-                    <li><strong>Third-party processor retention (xAI/Grok)</strong>: Images transmitted to xAI are
-                        processed to generate analysis results. xAI may retain submitted content for up to 30 days and
-                        may retain it longer if legally required or if flagged for security/safety/compliance review,
-                        consistent with xAI’s enterprise/API terms.</li>
+                    <li><strong>Retention (Opal Labs)</strong>: We do not retain face images. The image is deleted from
+                        Firebase Storage immediately after analysis completes or fails (deletion occurs in the backend
+                        function after processing).</li>
+                    <li><strong>Retention (xAI/Grok)</strong>: The image is transmitted to xAI for analysis. Per xAI
+                        enterprise/API terms, submitted content may be retained for up to 30 days and longer if legally
+                        required or flagged for security/safety/compliance review.</li>
                 </ul>
             </li>
+            <li><strong>Analysis Results</strong>: The analysis score and tips are returned to the device for display
+                and are not stored in our databases. We store only a minimal <code>user_stats</code> usage counter to
+                enforce usage limits (no face images, no analysis text, no scores).</li>
+            <li><strong>xAI processing details</strong>: Our backend sends the full uploaded image to xAI (Grok) for
+                analysis. We do not send your user ID, email address, or other account identifiers to xAI.</li>
+            <li><strong>Biometric Exclusion</strong>: We do not perform identity verification, face recognition, or
+                matching against a database. We do not generate or store faceprints/embeddings/biometric templates.</li>
+            <li><strong>User Control</strong>: Face images are uploaded only when you explicitly select/capture a photo
+                and submit it for analysis.</li>
             <li><strong>Disclosure</strong>: We do not sell, trade, or otherwise transfer your facial data to outside
                 parties.</li>
         </ul>
@@ -68,12 +86,14 @@
         <h2>3. Third-Party Services</h2>
         <p>We leverage the following third-party providers to power our app:</p>
         <ul class="list">
-            <li><strong>Google Firebase</strong>: For authentication, database, and secure cloud storage.</li>
-            <li><strong>RevenueCat</strong>: For managing subscriptions and purchase history.</li>
-            <li><strong>Google ML Kit</strong>: For on-device face detection.</li>
-            <li><strong>xAI (Grok)</strong>: For generating the AI analysis and text explanation (facial analysis
-                feedback).
-                xAI may retain data for up to 30 days per their terms.</li>
+            <li><strong>Google Firebase</strong>: Temporary storage of uploaded face images for processing (deleted
+                immediately after processing).</li>
+            <li><strong>RevenueCat</strong>: Subscription status only; no face images.</li>
+            <li><strong>Google ML Kit</strong>: On-device face detection only; images do not leave the device for ML Kit
+                processing.</li>
+            <li><strong>xAI (Grok)</strong>: Receives the uploaded image for analysis feedback; may retain submitted
+                content up to 30 days per their terms.</li>
+            <li><strong>Crashlytics/Analytics</strong>: App diagnostics/metadata only; no face images.</li>
         </ul>
 
         <h2>4. User Rights (GDPR/CCPA Compliance)</h2>
