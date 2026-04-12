@@ -1,16 +1,17 @@
-
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Products — Opal Labs Oy</title>
-  <meta name="description" content="Explore products by Opal Labs Oy, including Velox for social video editors." />
+  <title>Products - Opal Labs Oy</title>
+  <meta name="description" content="Explore products by Opal Labs Oy, including Velox, now live on the App Store and Google Play." />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <meta name="theme-color" content="#0b0f1a" />
 </head>
+
 <body>
 <header class="container">
   <div class="brand">
@@ -18,28 +19,31 @@
     <a href="/" class="name">Opal Labs Oy</a>
   </div>
   <nav>
-    <a class="" href="/about/">About</a>
+    <a href="/about/">About</a>
     <a class="active" href="/products/">Products</a>
-    <a class="" href="/contact/">Contact</a>
+    <a href="/contact/">Contact</a>
   </nav>
 </header>
 
 <section class="container hero">
   <span class="tag">Products</span>
-  <h1>Current & upcoming apps</h1>
-  <p class="lead">We focus on creator workflows. Our next release is <strong>Velox</strong> for enhancing social video edits.</p>
+  <h1>Current and upcoming apps</h1>
+  <p class="lead">We focus on creator workflows. <strong>Velox</strong> is now live for enhancing social video edits.</p>
 </section>
 
 <section class="container grid">
   <article class="card">
-    <div class="product-badge">Velox <span class="coming">coming soon</span></div>
+    <div class="product-badge">Velox <span class="coming">live now</span></div>
     <h2>Enhance low-quality clips for stunning social edits</h2>
     <ul class="list">
       <li>Upscale short clips for crisp 4K exports</li>
       <li>Denoise and sharpen without artifacts</li>
       <li>Designed for social workflows and speedy iteration</li>
     </ul>
-    <a class="link" href="mailto:support@opallabs.com?subject=Velox%20early%20access">Request early access →</a>
+    <div class="inline-links" style="display:flex; flex-direction:column; gap:10px; margin-top:14px;">
+      <a href="https://apps.apple.com/us/app/velox-ai-video-enhancer/id6754984373">Download on the App Store</a>
+      <a href="https://play.google.com/store/apps/details?id=com.opallabs.velox.prod">Get it on Google Play</a>
+    </div>
     <div class="divider"></div>
     <div class="inline-links">
       <a href="/velox/privacy">Velox Privacy</a>
@@ -48,16 +52,16 @@
   </article>
 
   <aside class="card">
-    <h2>What’s next</h2>
+    <h2>What's next</h2>
     <p class="sub">We prototype widely and ship what helps creators the most. Got an idea? Tell us.</p>
-    <a class="link" href="/contact/">Contact us →</a>
+    <a class="link" href="/contact/">Contact us -&gt;</a>
   </aside>
 </section>
 
 <footer class="container">
   <div class="divider"></div>
   <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center">
-    <div>© <span id="y"></span> Opal Labs Oy</div>
+    <div>&copy; <span id="y"></span> Opal Labs Oy</div>
     <div class="inline-links">
       <a href="/about/">About</a>
       <a href="/products/">Products</a>
@@ -68,4 +72,6 @@
   </div>
 </footer>
 <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-</body></html>
+</body>
+
+</html>
