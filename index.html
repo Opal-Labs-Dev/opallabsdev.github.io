@@ -1,86 +1,86 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Opal Labs Oy - AI-powered mobile apps</title>
-  <meta name="description"
-    content="Opal Labs Oy creates AI-powered mobile applications. Velox is now live on the App Store and Google Play for enhancing and restoring low-quality images and videos." />
+  <title>Opal Labs Oy</title>
+  <meta name="description" content="Opal Labs is an independent Helsinki software studio building focused mobile products." />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
-  <meta name="theme-color" content="#0b0f1a" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" href="/favicon-48.png" sizes="48x48">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+  <meta name="theme-color" content="#080808" />
 </head>
-
 <body>
   <header class="container">
     <div class="brand">
-      <a href="/"><img src="/Opal Labs Logo.png" alt="Opal Labs logo" /></a>
+      <a href="/" aria-label="Opal Labs home"><img src="/Opal Labs Logo.png" alt="" /></a>
       <a href="/" class="name">Opal Labs Oy</a>
     </div>
-    <nav>
+    <nav aria-label="Main navigation">
       <a href="/about/">About</a>
       <a href="/products/">Products</a>
       <a href="/contact/">Contact</a>
     </nav>
   </header>
 
-  <section class="container hero">
-    <span class="tag">AI-powered mobile applications</span>
-    <h1>We build focused AI apps for creators and pros</h1>
-    <p class="lead">Opal Labs Oy is a software studio crafting mobile tools that feel fast, thoughtful, and practical.
-      <strong>Velox</strong> is now live and helps creators turn low-quality images and clips into crisp,
-      high-resolution edits.</p>
-    <div class="cta">
-      <a class="btn" href="/products/" title="See products">Explore products</a>
-      <a class="btn ghost" href="/contact/" title="Get in touch">Contact us</a>
-    </div>
-  </section>
-
-  <section class="container grid">
-    <article class="card">
-      <div class="product-badge">Velox <span class="coming">live now</span></div>
-      <h2>Enhance and restore low-quality images and clips</h2>
-      <p class="sub">For creators making sports edits, visual posts, and other fast-paced content. Velox boosts clarity
-        and resolution when original media is compressed, blurred, or low quality.</p>
-      <ul class="list">
-        <li>Upscale images and short clips for crisp exports</li>
-        <li>Denoise, sharpen, and restore detail with fewer artifacts</li>
-        <li>Designed for social workflows and speedy iteration</li>
-      </ul>
-      <div class="inline-links" style="display:flex; flex-direction:column; gap:10px; margin-top:14px;">
-        <a href="https://apps.apple.com/us/app/velox-ai-video-enhancer/id6754984373">Download on the App Store</a>
-        <a href="https://play.google.com/store/apps/details?id=com.opallabs.velox.prod">Get it on Google Play</a>
+  <main>
+    <section class="container hero home-hero">
+      <span class="eyebrow">Opal Labs Oy · Helsinki</span>
+      <h1>Mobile applications.</h1>
+      <p class="lead">Opal Labs Oy is a Finnish software company. We develop and operate consumer mobile applications.</p>
+      <div class="cta">
+        <a class="btn" href="/products/">Products</a>
+        <a class="btn ghost" href="/contact/">Contact</a>
       </div>
-      <div class="divider"></div>
-      <p class="small mono">Velox is live now on iOS and Android.</p>
-    </article>
+    </section>
 
-    <aside class="card">
-      <h2>About Opal Labs Oy</h2>
-      <p class="sub">We are a small, independent company building tightly scoped apps with modern AI where it actually
-        helps. Quality, usability, and shipping fast matter to us.</p>
-      <span class="pill">Helsinki, Finland</span>
-      <span class="pill">Mobile-first</span>
-      <span class="pill">Privacy-minded</span>
-    </aside>
-  </section>
+    <section class="container section">
+      <div class="section-head">
+        <p class="section-kicker">Products</p>
+        <div>
+          <h2 class="section-title">Velox</h2>
+          <p class="section-copy">Image and video enhancement for iOS and Android.</p>
+        </div>
+      </div>
+      <article class="product-feature">
+        <div class="product-visual">
+          <div class="product-meta"><span>Velox</span><span>iOS + Android</span></div>
+          <div class="product-mark">V.</div>
+          <div class="product-meta"><span>Enhance</span><span>Restore</span><span>Upscale</span></div>
+        </div>
+        <div class="product-detail">
+          <span class="eyebrow">Available on iOS and Android</span>
+          <h3>Image and video enhancement.</h3>
+          <p>Velox enhances, restores, and upscales low-resolution images and short videos.</p>
+          <div class="product-links">
+            <a href="https://apps.apple.com/us/app/velox-ai-video-enhancer/id6754984373">Download for iPhone ↗</a>
+            <a href="https://play.google.com/store/apps/details?id=com.opallabs.velox.prod">Download for Android ↗</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="container section">
+      <div class="section-head">
+        <p class="section-kicker">Company</p>
+        <div>
+          <h2 class="section-title">Based in Helsinki, Finland.</h2>
+          <p class="section-copy">For product support and general enquiries, contact support@opallabsdev.com.</p>
+          <div class="cta"><a class="btn ghost" href="mailto:support@opallabsdev.com">Email us</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="container">
-    <div class="divider"></div>
-    <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center">
-      <div>&copy; <span id="y"></span> Opal Labs Oy</div>
-      <div class="inline-links">
-        <a href="/about/">About</a>
-        <a href="/products/">Products</a>
-        <a href="/contact/">Contact</a>
-        <a href="/velox/privacy">Velox Privacy</a>
-        <a href="/velox/terms">Velox Terms</a>
-      </div>
+    <div style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center">
+      <div>&copy; <span id="y"></span> Opal Labs Oy · Helsinki, Finland</div>
+      <div class="inline-links"><a href="/about/">About</a><a href="/products/">Products</a><a href="/contact/">Contact</a><a href="/velox/privacy">Privacy</a><a href="/velox/terms">Terms</a></div>
     </div>
   </footer>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
-
 </html>
