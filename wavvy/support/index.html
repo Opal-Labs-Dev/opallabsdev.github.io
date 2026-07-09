@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wavvy Support — Opal Labs Oy</title>
+  <meta name="description" content="Support for the Wavvy app. Contact us for help." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" href="/favicon-48.png" sizes="48x48">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+  <meta name="theme-color" content="#0b0f1a" />
+</head>
+
+<body>
+  <header class="container">
+    <div class="brand">
+      <a href="/"><img src="/Opal Labs Logo.png" alt="Opal Labs logo" /></a>
+      <a href="/" class="name">Opal Labs Oy</a>
+    </div>
+    <nav>
+      <a href="/about/">About</a>
+      <a href="/products/">Products</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </header>
+
+  <section class="container hero">
+    <span class="tag">Wavvy Support</span>
+    <h1>Need help with Wavvy?</h1>
+    <p class="lead">We're here to assist with song generation, credits, subscriptions, account deletion, and app issues.</p>
+    <div class="cta">
+      <a class="btn" href="mailto:support@opallabsdev.com">Contact Support</a>
+    </div>
+  </section>
+
+  <section class="container grid">
+    <article class="card">
+      <h2>Contact Us</h2>
+      <p class="sub">Email our support team directly.</p>
+      <a class="link" href="mailto:support@opallabsdev.com">support@opallabsdev.com</a>
+      <p class="small" style="margin-top:10px;">We aim to respond within 24 hours.</p>
+    </article>
+
+    <aside class="card">
+      <h2>Resources</h2>
+      <div class="inline-links" style="display:flex; flex-direction:column; gap:8px;">
+        <a href="/wavvy/privacy">Privacy Policy</a>
+        <a href="/wavvy/terms">Terms of Service</a>
+      </div>
+    </aside>
+  </section>
+
+  <footer class="container">
+    <div class="divider"></div>
+    <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center">
+      <div>&copy; <span id="y"></span> Opal Labs Oy</div>
+      <div class="inline-links">
+        <a href="/about/">About</a>
+        <a href="/products/">Products</a>
+        <a href="/contact/">Contact</a>
+        <a href="/wavvy/privacy">Wavvy Privacy</a>
+        <a href="/wavvy/terms">Wavvy Terms</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
