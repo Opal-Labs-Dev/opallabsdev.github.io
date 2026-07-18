@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SingSeek Support — Opal Labs Oy</title>
+  <meta name="description" content="Support for the SingSeek app." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" href="/favicon-48.png" sizes="48x48">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+  <meta name="theme-color" content="#0b0f1a" />
+</head>
+
+<body>
+  <header class="container">
+    <div class="brand">
+      <a href="/"><img src="/Opal Labs Logo.png" alt="Opal Labs logo" /></a>
+      <a href="/" class="name">Opal Labs Oy</a>
+    </div>
+    <nav>
+      <a href="/about/">About</a>
+      <a href="/products/">Products</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </header>
+
+  <section class="container hero">
+    <span class="tag">SingSeek Support</span>
+    <h1>Need help finding a song?</h1>
+    <p class="lead">We can help with melody recognition, microphone access, subscriptions, search packs, purchase restoration, and account deletion.</p>
+    <div class="cta">
+      <a class="btn" href="mailto:support@opallabsdev.com?subject=SingSeek%20Support">Contact Support</a>
+    </div>
+  </section>
+
+  <section class="container grid">
+    <article class="card">
+      <h2>Contact Us</h2>
+      <p class="sub">Include your device model, iOS version, and a short description of what happened. Please do not email audio recordings unless we ask for one.</p>
+      <a class="link" href="mailto:support@opallabsdev.com?subject=SingSeek%20Support">support@opallabsdev.com</a>
+      <p class="small" style="margin-top:10px;">We aim to respond within 24 hours.</p>
+    </article>
+
+    <aside class="card">
+      <h2>Quick help</h2>
+      <ul class="list">
+        <li>Allow microphone access in iOS Settings if SingSeek cannot listen.</li>
+        <li>Hum a recognizable chorus steadily for 4–12 seconds in a quiet place.</li>
+        <li>Use Restore Purchases in SingSeek Settings after reinstalling or changing devices.</li>
+        <li>Manage or cancel subscriptions in your Apple account subscription settings.</li>
+        <li>Delete your account and saved data from SingSeek Settings.</li>
+      </ul>
+    </aside>
+  </section>
+
+  <section class="container section">
+    <div class="card">
+      <h2>Resources</h2>
+      <div class="inline-links">
+        <a href="/singseek/privacy/">Privacy Policy</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard EULA</a>
+        <a href="https://apps.apple.com/account/subscriptions">Manage Apple subscriptions</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container">
+    <div class="divider"></div>
+    <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center">
+      <div>&copy; <span id="y"></span> Opal Labs Oy</div>
+      <div class="inline-links">
+        <a href="/about/">About</a>
+        <a href="/products/">Products</a>
+        <a href="/contact/">Contact</a>
+        <a href="/singseek/privacy/">SingSeek Privacy</a>
+        <a href="/singseek/support/">SingSeek Support</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>

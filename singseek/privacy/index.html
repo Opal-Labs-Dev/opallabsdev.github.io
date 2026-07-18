@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy – SingSeek</title>
+  <meta name="description" content="Privacy Policy for the SingSeek app." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" href="/favicon-48.png" sizes="48x48">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+  <meta name="theme-color" content="#0b0f1a" />
+</head>
+
+<body>
+  <header class="container">
+    <div class="brand">
+      <a href="/"><img src="/Opal Labs Logo.png" alt="Opal Labs logo" /></a>
+      <a href="/" class="name">Opal Labs Oy</a>
+    </div>
+    <nav>
+      <a href="/about/">About</a>
+      <a href="/products/">Products</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </header>
+
+  <section class="container" style="max-width:800px; margin-top:24px;">
+    <h1>Privacy Policy</h1>
+    <p class="small">Last updated: 2026-07-18</p>
+
+    <p><strong>SingSeek</strong> (“we”, “us”) helps users identify music by humming, singing, or whistling a short melody. This policy explains what information we process, why we process it, who helps us provide the service, and the choices available to users.</p>
+
+    <h2>1. Accounts and app data</h2>
+    <p>SingSeek starts with an anonymous account so users do not need to provide an email address.</p>
+    <ul class="list">
+      <li><strong>Anonymous account</strong>: we create an internal user ID and authentication record.</li>
+      <li><strong>Recognition history</strong>: we store matched song metadata, confidence scores, timestamps, favorites, and alternative matches so users can revisit results.</li>
+      <li><strong>Preferences</strong>: we store app settings such as haptic feedback and onboarding completion on the device.</li>
+      <li><strong>Purchase records</strong>: we store subscription status, search balances, purchase-related identifiers, and credit transactions.</li>
+    </ul>
+
+    <h2>2. Audio processing</h2>
+    <p>When an eligible user asks SingSeek to identify a melody, the app records a short audio clip and sends it through our backend to ACRCloud for music recognition. The clip is used to provide the requested match.</p>
+    <ul class="list">
+      <li>The recording is not uploaded to or retained in our Supabase file storage.</li>
+      <li>The app deletes its temporary local copy after recognition, failure, or dismissal of an unpaid preview.</li>
+      <li>We retain normalized match metadata, not the recording itself, in the user's recognition history.</li>
+      <li>ACRCloud processes the submitted audio under its own service terms and provider-controlled retention practices.</li>
+    </ul>
+
+    <h2>3. How we use information</h2>
+    <ul class="list">
+      <li>Authenticate users and keep recognition history and favorites available.</li>
+      <li>Process melody-recognition requests and return song matches.</li>
+      <li>Manage subscriptions, search balances, top-ups, restoration, refunds, and billing status.</li>
+      <li>Maintain security, prevent abuse, diagnose failures, and improve reliability.</li>
+      <li>Respond to support, access, correction, and deletion requests.</li>
+    </ul>
+
+    <h2>4. Service providers and sharing</h2>
+    <p>We use service providers to operate SingSeek:</p>
+    <ul class="list">
+      <li><strong>Supabase</strong>: anonymous authentication, database records, and backend functions.</li>
+      <li><strong>ACRCloud</strong>: audio fingerprinting and humming-based music recognition.</li>
+      <li><strong>RevenueCat</strong>: purchase status, entitlements, restoration, and billing event delivery.</li>
+      <li><strong>Apple App Store</strong>: in-app purchases and subscription billing. We do not receive full payment card details.</li>
+      <li><strong>Apple Music catalog services</strong>: song metadata and links used to present and resolve recognized recordings.</li>
+    </ul>
+    <p>We do not sell personal information, use SingSeek data for third-party advertising, or track users across other companies' apps and websites. We may disclose limited information where required by law or reasonably necessary to protect users, prevent fraud or abuse, enforce our terms, or resolve payment disputes.</p>
+
+    <h2>5. Retention</h2>
+    <p>We keep account, recognition-history, favorite, credit, and purchase-related records while an account remains active or as needed to operate the service. Retention may be longer where reasonably necessary for backups, billing, fraud prevention, security, dispute handling, tax, or legal compliance. Audio processing and retention by ACRCloud follows its provider-controlled practices.</p>
+
+    <h2>6. Account and data deletion</h2>
+    <p>Users can delete their account and associated SingSeek data from Settings in the app. This removes the anonymous authentication record, internal user ID, recognition history, favorites, credit records, and purchase linkage from active systems. Users may also contact <a href="mailto:support@opallabsdev.com" style="color:var(--blue)">support@opallabsdev.com</a>.</p>
+    <ul class="list">
+      <li><strong>No anonymous account recovery</strong>: after deletion, we may be unable to verify ownership or restore an anonymous account.</li>
+      <li><strong>Subscriptions</strong>: deleting a SingSeek account does not cancel an App Store subscription. Users must cancel through their Apple account subscription settings.</li>
+      <li><strong>Temporary remnants</strong>: backups, logs, caches, and propagation artifacts may remain temporarily until overwritten or automatically purged.</li>
+      <li><strong>Limited retained records</strong>: minimal billing, security, dispute, fraud-prevention, tax, or legal records may be retained where necessary.</li>
+    </ul>
+
+    <h2>7. User rights</h2>
+    <p>Where applicable under local law, users may request access to, correction of, portability of, objection to, restriction of, or deletion of personal data. We may need to verify identity before acting on a request.</p>
+
+    <h2>8. Children</h2>
+    <p>SingSeek is not directed to children under 13, or the minimum age required by local law in the user's jurisdiction.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be reflected by updating the date above.</p>
+
+    <h2>10. Contact</h2>
+    <p>Email: <a href="mailto:support@opallabsdev.com" style="color:var(--blue)">support@opallabsdev.com</a></p>
+    <p>Website: <a href="https://opallabsdev.com" style="color:var(--blue)">https://opallabsdev.com</a></p>
+
+    <div class="divider"></div>
+    <p class="small">See also our <a href="/singseek/support/" style="text-decoration:underline;">Support page</a> and <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" style="text-decoration:underline;">Apple Standard EULA</a>.</p>
+  </section>
+
+  <footer class="container">
+    <div class="divider"></div>
+    <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center">
+      <div>&copy; <span id="y"></span> Opal Labs Oy</div>
+      <div class="inline-links">
+        <a href="/about/">About</a>
+        <a href="/products/">Products</a>
+        <a href="/contact/">Contact</a>
+        <a href="/singseek/privacy/">SingSeek Privacy</a>
+        <a href="/singseek/support/">SingSeek Support</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
