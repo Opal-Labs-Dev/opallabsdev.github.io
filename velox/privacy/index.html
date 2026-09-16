@@ -30,18 +30,22 @@
 
   <section class="container" style="max-width:800px; margin-top:24px;">
     <h1>Privacy Policy</h1>
-    <p class="small">Last updated: 2026-06-02</p>
+    <p class="small">Last updated: 2026-09-16</p>
 
-    <p>Velox (“we”, “us”) enhances, restores, and upscales images and short videos using cloud processing. This policy
-      explains what we collect, why, and your options.</p>
+    <p>Velox, provided by Opal Labs Oy, uses cloud processing to create, enhance, and edit photos, video, and audio.
+      This policy explains what we collect, why, and your options. Available features and controls depend on your app version.</p>
 
     <h2>Data we collect</h2>
     <ul class="list">
-      <li><strong>Account</strong>: email and Firebase user ID when you sign in.</li>
-      <li><strong>Purchases</strong>: subscription status from RevenueCat (no full payment card data).</li>
+      <li><strong>Account</strong>: your account identifier, email when you use an email account, and optional profile details.</li>
+      <li><strong>Purchases</strong>: subscription status, store transaction records, credit balances, and refund information
+        used to deliver purchases and prevent duplicate credit grants. We do not receive your full payment card details.</li>
       <li><strong>Jobs</strong>: metadata for your uploads and results (e.g., filenames, sizes, status, timestamps).
       </li>
-      <li><strong>Content</strong>: uploaded images, videos, and generated outputs stored to deliver results.</li>
+      <li><strong>Content</strong>: selected images, video, audio, text prompts, settings, and generated results.
+        Selected media can contain faces and voices.</li>
+      <li><strong>Preferences and support</strong>: onboarding answers, processing-consent records, and information you
+        provide when requesting help.</li>
       <li><strong>Diagnostics</strong>: crash/error logs (if enabled) to fix issues.</li>
       <li><strong>Analytics and app events</strong>: app usage, campaign attribution, and conversion events collected
         through tools such as TikTok Events and Meta/Facebook App Events where enabled.</li>
@@ -49,20 +53,41 @@
 
     <h2>How we use data</h2>
     <ul class="list">
-      <li>Authenticate, process, and deliver image and video jobs; show history.</li>
-      <li>Validate subscriptions and restore access across devices.</li>
+      <li>Authenticate, process and deliver your creations, and show your project history.</li>
+      <li>Validate subscriptions, deliver credits, and restore access across devices and app updates.</li>
       <li>Maintain security, performance, support, and prevent abuse.</li>
       <li>Measure app installs, feature usage, subscription conversions, and advertising campaign performance.</li>
     </ul>
 
     <h2>Sharing</h2>
-    <p>We use processors acting on our behalf, including Google Firebase (auth, database, storage), RevenueCat
-      (subscriptions), TikTok Events, Meta/Facebook App Events, and our image and video processing infrastructure. They
-      process data under our instructions and their privacy terms.</p>
+    <p>We use Google Firebase for authentication and diagnostics, Convex for Studio application data, jobs and media
+      storage, and RevenueCat for subscription and purchase verification. Earlier app versions also use Firebase
+      database and storage services. Apple or Google handles your store payment.</p>
+    <p>For AI features, your selected content and instructions are sent to WaveSpeedAI and the model providers used
+      by the chosen tool. The Studio app asks for permission before your first live creation. Declining does not start
+      that creation. Only submit media, faces and voices you own or have permission to use. Provider processing and
+      retention are described in the <a href="https://wavespeed.ai/static/privacy">WaveSpeedAI Privacy Policy</a> and
+      the applicable model-provider terms.</p>
+    <p>TikTok and Meta/Facebook measurement may be used where enabled in supported app versions or our purchase
+      integrations. Their applicable notices and your device's privacy choices also apply.</p>
+
+    <h2>Where information is processed</h2>
+    <p>Our production application data and media storage are hosted in the United States. Our service providers may
+      also process information in other countries. Contact us for information about the providers and transfer
+      safeguards applicable to your data.</p>
 
     <h2>Retention</h2>
     <p>We retain account, purchase, and job data while you use the app and as needed for legal, security, and accounting
       purposes. See “Delete your data”.</p>
+    <p>Saved Studio projects do not currently expire automatically. Unreferenced uploads can be cleaned up separately;
+      this does not mean every project is deleted after a fixed number of days. Download results you want to keep.</p>
+    <p>WaveSpeedAI describes its generated media as temporary and generally expiring within seven days; prediction
+      metadata, usage logs, and records needed for billing, security, support or legal obligations may remain longer.
+      This provider storage period is separate from copies saved in your Velox projects. See its
+      <a href="https://wavespeed.ai/docs/data-retention-policy">data retention policy</a>.</p>
+    <p>Restricted recovery backups can retain earlier copies after deletion from active systems. We also retain
+      limited transaction and deletion identifiers where needed to prevent duplicate purchases, resolve disputes,
+      honor deletion requests after a recovery, and meet legal obligations.</p>
 
     <h2>Your rights</h2>
     <p>You can request access, correction, portability, objection, or deletion where applicable to your region’s laws
@@ -70,14 +95,18 @@
 
     <h2>Delete your data</h2>
     <ul class="list">
-      <li><strong>In the app</strong>: <em>Settings → Danger zone → Delete account</em>. This deletes your jobs, profile
-        document, storage artifacts, and Firebase Auth record.</li>
+      <li><strong>In the Studio app</strong>: open the account card in Settings and choose <em>Delete account</em>.
+        Deletion is scheduled after the seven-day safety period shown in the app. You can cancel during that period;
+        once permanent deletion starts, it cannot be cancelled.</li>
+      <li><strong>Earlier app versions</strong>: use <em>Settings → Danger zone → Delete account</em>.</li>
       <li><strong>By email</strong>: write to <a href="mailto:support@opallabsdev.com"
           style="color:var(--blue)">support@opallabsdev.com</a> from your account email with subject “Velox account
         deletion”.</li>
     </ul>
-    <p>We aim to complete deletion within 7 days (no later than 30). Minimal logs/payment records may be retained for up
-      to 90 days where required.</p>
+    <p>The deletion process covers account access, profiles, projects and uploaded media, and requests cleanup from
+      relevant service providers. Limited records described under Retention can remain. Provider retries or a shared
+      purchase identity can require additional checks; contact support if your request has not completed. Copies you
+      have downloaded or shared outside Velox remain under your control.</p>
 
     <h2>Subscriptions</h2>
     <p>Deleting your account does not cancel an active App Store or Google Play subscription. Cancel in your store
